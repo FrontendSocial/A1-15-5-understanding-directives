@@ -1,0 +1,31 @@
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img style="width: 100%;" [src]="product.imageUrl" [alt]="product.name">
+            <span>{{ product.price }}</span>
+    <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <h5 class="card-subtitle mb-2 text-muted">Reviews: {{product.reviews}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <p class="card-text">
+                    <span>Available Offers</span>
+                    <!-- <ul>
+                        <li>{{product.availableOffers}}</li>
+                    </ul> -->
+                </p>
+                <p class="card-text">
+                    <span>Highlights</span>
+                    <!-- <ul>
+                        <li>{{product.specs}}</li>
+                    </ul> -->
+                </p>
+                <p class="card-text">
+                    Warranty: {{ product.warranty }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
